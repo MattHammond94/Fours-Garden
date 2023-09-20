@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Noto+Sans+Nabataean&family=Oswald:wght@300&family=Playfair+Display&family=Roboto+Mono:wght@500&display=swap');
+
+:root {
+  --main-font-color: #564635;
+}
+
+.head link {
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: 'Comforter Brush';
+  font-size: 5rem;
+
+  color: var(--main-font-color);
+}
+
+
