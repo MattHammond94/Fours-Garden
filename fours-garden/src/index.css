@@ -2,3 +2,6 @@
   --main-font-color: #564635;
 }
 
+h1 {
+  color: var(--main-font-color);
+}
