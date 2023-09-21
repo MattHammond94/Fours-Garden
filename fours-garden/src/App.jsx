@@ -5,16 +5,25 @@ import {
   RouterProvider
 } from 'react-router-dom';
 
-import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
-import NotFound from "./Pages/NotFound";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import AltHome from "./pages/AltHome";
+import LandingPage from "./pages/LandingPage"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Home />} >
+    <>
+      <Route path="/" element={<LandingPage />} />
+
+      <Route path="the-garden" element={<Home />} >
+        <Route path="cabbages" element={<AltHome />} />
+      </Route>
+
       <Route path="contact" element={<Contact />} />
+
       <Route path="*" element={<NotFound />} />
-    </Route>
+    </>
   )
 )
 
