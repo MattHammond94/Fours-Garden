@@ -17,6 +17,7 @@ body {
   height: 100%;
   width: 225px;
   position: fixed;
+  left: -260px;
 
   display: flex;
   flex-direction: column;
@@ -27,11 +28,13 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.navbar.open {
+  left: 0;
+}
+
 .navbar img {
   width: 150px;
   height: 150px;
-  /* margin-top: 40px;
-  margin-left: 32px; */
   margin-bottom: 20px;
   align-self: center;
 }
@@ -41,14 +44,24 @@ body {
   color: var(--main-font-color);
   margin: 10px;
   font-size: 25px;
-
 }
 
 .navbar a:nth-child(7) {
   margin-top: 50px;
 }
 
-.navbar a.active {
+.navbar a:hover {
   font-weight: bold;
   color: #111;
+}
+
+.navbar-toggler {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }

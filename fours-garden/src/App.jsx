@@ -17,13 +17,13 @@ const router = createBrowserRouter(
 
       <Route path="the-garden" element={<Home />} />
 
-      <Route path="artwork" element={<ArtworkLayout />} >
+      {/* <Route path="artwork" element={<ArtworkLayout />} >
         <Route path="drawings" element={<Drawings />} />
         <Route path="paintings" element={<Paintings />} />
         <Route path="prints" element={<Prints />} />
         <Route path="photographs" element={<Photographs />} />
         <Route path="misc" element={<Misc />} />
-      </Route>
+      </Route> */}
 
       <Route path="contact" element={<Contact />} />
 
