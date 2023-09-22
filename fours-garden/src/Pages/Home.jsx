@@ -1,14 +1,8 @@
-import { Outlet } from 'react-router-dom';
-import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
     <div>
-      <NavBar />
-      <h1>Fours Garden</h1>
-      <main>
-        <Outlet />
-      </main>
+      <h1>Welcome to <span>Fours</span> Garden of Wonders</h1>
     </div>
   )
 }
