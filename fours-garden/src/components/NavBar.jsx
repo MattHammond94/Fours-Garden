@@ -17,7 +17,7 @@ const NavBar = () => {
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
       <button className="navbar-toggler" style={togglerStyle} onClick={ toggleNav }>&#9776;</button>
       <nav className="navbar-child">
-        <img src="/4-circle.png" alt="logo" />
+        <img src="/title-icon.png" alt="logo" />
         <NavLink to="/artwork/drawings">Drawings</NavLink>
         <NavLink to="/artwork/paintings">Paintings</NavLink>
         <NavLink to="/artwork/prints">Prints</NavLink>
