@@ -19,40 +19,52 @@ body {
   position: fixed;
   left: -260px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+  transition: left 0.3s;
 }
 
 .navbar.open {
   left: 0;
 }
 
-.navbar img {
+.navbar-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar-child img {
   width: 150px;
   height: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   align-self: center;
 }
 
-.navbar a {
+.navbar-child a {
   text-decoration: none;
   color: var(--main-font-color);
   margin: 10px;
   font-size: 25px;
+
+  transition: right 4s;
 }
 
-.navbar a:nth-child(7) {
+.navbar-child a:nth-child(7) {
   margin-top: 50px;
 }
 
-.navbar a:hover {
-  font-weight: bold;
-  color: #111;
+.navbar-child a:nth-child(7):hover {
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.4;
+}
+
+.navbar-child a:hover {
+  text-decoration: underline;
+  text-shadow: #564635;
+  color: grey
 }
 
 .navbar-toggler {
@@ -64,4 +76,6 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+
+  transition: left 0.3s;
 }
