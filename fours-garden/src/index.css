@@ -168,3 +168,27 @@ body {
   width: 400px;
   align-self: flex-start;
 }
+
+
+/* Contact form */
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-submit-btn {
+  width: 100px;
+  height: 40px;
+  background-color: var(--main-font-color);
+  color: white;
+  align-self: center;
+  border-radius: 6%;
+}
