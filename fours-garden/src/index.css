@@ -215,3 +215,18 @@ body {
   font-family: var(--headers-font);
   color: var(--main-font-color);
 }
+
+/* Toast styling */
+.contact-toast {
+  background: var(--main-font-color);
+  color: white;
+
+}
+
+.contact-toast .Toastify__close-button {
+  color: white;
+}
+
+.contact-toast-progress {
+  background: #C5B6A7;
+}

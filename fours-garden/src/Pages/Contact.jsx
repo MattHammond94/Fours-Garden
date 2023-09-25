@@ -1,10 +1,15 @@
 import ContactForm from "../components/ContactForm";
 
+/* Toast element */
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
 
   return (
     <>
       <div>
+        <ToastContainer />
         <img src="" alt="" />
         <div className="white-layer"></div>
         <img src="" alt="" />
