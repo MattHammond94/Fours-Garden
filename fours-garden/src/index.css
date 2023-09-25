@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--background-colour)
+  background-color: var(--background-colour);
 }
 
 
@@ -117,4 +117,54 @@ body {
   cursor: pointer;
 
   transition: left 0.3s;
+}
+
+
+
+/* Not found(404) page */
+
+.not-found-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-left: 70px;
+}
+
+.four-logo {
+  height: 350px;
+  width: 350px;
+}
+
+.not-found-content-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.not-found-content-container h1 {
+  font-family: var(--headers-font);
+  color: var(--main-font-color);
+  font-size: 120px;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.not-found-content-container p {
+  font-family: var(--text-font);
+  color: var(--main-font-color);
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.not-found-container a:visited {
+  color: var(--main-font-color);
+}
+
+.four-signature {
+  height: 250px;
+  width: 400px;
+  align-self: flex-start;
 }
