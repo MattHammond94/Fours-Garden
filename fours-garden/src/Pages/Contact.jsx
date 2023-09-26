@@ -16,16 +16,16 @@ const Contact = () => {
   return (
     <div className="contact-page-container">
       <div className="contact-sidebar-container">
-        <ToastContainer />
-        <img src="../../public/con-page-design.jpg" className="sidebar-img-main" />
+        <img src="con-page-design.jpg" className="sidebar-img-main" />
         <div className="white-layer"></div>
-        <img src="four-signature.png" className="sidebar-img-sig" />
-        <div className="contact-elements-container">
-          <h1 className="contact-header">Contact</h1>
-          <p className="contact-text">You can find and get in touch with me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a><br />Alternatively if you have a query or want to get in touch please complete the form below:</p>
-          <ContactForm />
-          <button className="home-btn" onClick={ sendHome }>Return Home</button>
-        </div>
+        <img src="home-page-title.png" className="sidebar-img-sig" />
+      </div>
+      <div className="contact-elements-container">
+        <h1 className="contact-header">Contact</h1>
+        <p className="contact-text">You can find and get in touch with me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a><br />Alternatively if you have a query or want to get in touch please complete the form below:</p>
+        <ToastContainer />
+        <ContactForm />
+        <button className="home-btn" onClick={ sendHome }>Return Home</button>
       </div>
     </div>
   )

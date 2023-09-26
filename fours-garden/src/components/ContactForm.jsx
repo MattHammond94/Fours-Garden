@@ -84,13 +84,13 @@ const ContactForm = () => {
     <div className="contact-form">
       <form ref={contactForm} onSubmit={contactFormSubmission}>
         <label>Name:</label>
-        <input type="text" name="name" placeholder="Full Name" value={ formValues.name } onChange={ handleChange }/>
+        <input type="text" name="name" value={ formValues.name } onChange={ handleChange }/>
         <p>{ errorMessages.name }</p>
         <label>Email Address:</label>
-        <input type="text" name="email" placeholder="Email Address" value={ formValues.email } onChange={ handleChange }/>
+        <input type="text" name="email" value={ formValues.email } onChange={ handleChange }/>
         <p>{ errorMessages.email }</p>
         <label>Query:</label>
-        <input type="text" name="query" placeholder="Your Query" value={ formValues.query } onChange={ handleChange } />
+        <textarea name="query" value={ formValues.query } onChange={ handleChange } />
         <p>{ errorMessages.query }</p>
         <button className="contact-submit-btn" type="submit">Send</button>
       </form>
