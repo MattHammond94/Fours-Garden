@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 
-const NavBar = () => {
+const NavBar = ({ variant }) => {
   const[isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -9,8 +9,16 @@ const NavBar = () => {
     return currentState ? setIsOpen(false) : setIsOpen(true)
   }
 
-  const togglerStyle = {
-    left: isOpen ? '260px' : '5px'
+  let togglerStyle = {
+    left: isOpen ? '240px' : '5px',
+    color: 'black'
+  }
+
+  if (variant === "artwork") {
+    togglerStyle = {
+      left: isOpen ? '240px' : '5px',
+      color: 'white'
+    }
   }
 
   return (

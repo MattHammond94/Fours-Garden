@@ -1,7 +1,14 @@
+import NavBar from "../components/NavBar";
+import { Outlet } from "react-router-dom";
 
 const ArtworkLayout = () => {
   return (
-    <div>ArtworkLayout</div>
+    <div>
+      <NavBar variant="artwork" />
+      <main>
+        <Outlet />
+      </main>
+    </div>
   )
 }
 

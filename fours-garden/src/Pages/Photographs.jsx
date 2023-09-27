@@ -1,7 +1,17 @@
 
 const Photographs = () => {
   return (
-    <div>Photographs</div>
+    <div className="photographs-container">
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
   )
 }
 
