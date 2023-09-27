@@ -164,6 +164,7 @@
   width: 190px;
   position: fixed;
   left: -260px;
+  z-index: 1;
 
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
   padding: 20px;
@@ -431,4 +432,105 @@
 
 .contact-toast-progress {
   background: #C5B6A7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Photographs page */
+
+.artwork-nav-container {
+  height: 170px;
+  width: 100%;
+  background-image: url('../public/navbar3.jpg');
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.artwork-nav-container div h1 {
+  color: white;
+  font-family: var(--text-font);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.artwork-nav-container a {
+  color: white;
+  font-family: var(--text-font);
+  position: absolute;
+  top: 75px;
+  right: 50px;
+}
+
+
+/* photographs page content */
+.photographs-content-container {
+  display: flex;
+}
+
+.street, .misc, .landscapes {
+  margin-top: 200px;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* flex: 1; */
+  /* background-color: #E3E0DC; */
+}
+
+.street {
+  margin-left: 10px;
+}
+
+.landscapes {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.misc {
+  margin-right: 10px;
+}
+
+.street h1, .landscapes h1, .misc h1 {
+  font-family: var(--text-font);
+  color: var(--main-font-color);
+  margin-bottom: 4px;
+}
+
+.img-container-one, .img-container-two, .img-container-three {
+  background-color: #E3E0DC;
+  height: 470px;
+  width: 96%;
+  margin-bottom: 5px;
+}
+
+.img-container-one img, .img-container-two img, .img-container-three img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-container-one img:hover, .img-container-two img:hover, .img-container-three img:hover {
+  opacity: 0.6;
+  filter: blur(1px);
 }
