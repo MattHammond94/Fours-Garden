@@ -1,7 +1,10 @@
+import ArtworkNavBar from "../components/ArtworkNavBar";
 
 const Drawings = () => {
   return (
-    <div>Drawings</div>
+    <div>
+      <ArtworkNavBar variant='drawings'/>
+    </div>
   )
 }
 

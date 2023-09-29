@@ -13,10 +13,9 @@ import ArtworkLayout from './layouts/ArtworkLayout';
 import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
 import Drawings from "./pages/Drawings";
-import Paintings from "./pages/Paintings";
 import Prints from "./pages/Prints";
 import Photographs from "./pages/Photographs";
-import Misc from "./pages/Misc";
+import Store from "./pages/Store";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -32,10 +31,9 @@ const router = createBrowserRouter(
 
       <Route path="artwork" element={<ArtworkLayout />} >
         <Route path="drawings" element={<Drawings />} />
-        <Route path="paintings" element={<Paintings />} />
-        <Route path="prints" element={<Prints />} />
         <Route path="photographs" element={<Photographs />} />
-        <Route path="misc" element={<Misc />} />
+        <Route path="prints" element={<Prints />} />
+        <Route path="store" element={<Store />} />
       </Route>
 
       <Route path="contact" element={<Contact />} />

@@ -17,6 +17,7 @@ const NavBar = ({ variant }) => {
   if (variant === "artwork") {
     togglerStyle = {
       left: isOpen ? '240px' : '5px',
+      top: '70px',
       color: 'white'
     }
   }
@@ -27,10 +28,9 @@ const NavBar = ({ variant }) => {
       <nav className="navbar-child">
         <img src="/title-icon.png" alt="logo" />
         <NavLink to="/artwork/drawings">Drawings</NavLink>
-        <NavLink to="/artwork/paintings">Paintings</NavLink>
-        <NavLink to="/artwork/prints">Prints</NavLink>
         <NavLink to="/artwork/photographs">Photographs</NavLink>
-        <NavLink to="/artwork/misc">Misc</NavLink>
+        <NavLink to="/artwork/prints">Prints</NavLink>
+        <NavLink to="/artwork/store">Store</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>
     </div>
