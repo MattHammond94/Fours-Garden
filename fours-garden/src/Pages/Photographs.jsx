@@ -8,19 +8,25 @@ const Photographs = () => {
         <div className="street">
           <h1>Street</h1>
           <div className="img-container-one">
-            <img src="../../public/street.jpg" className="img-one" />
+            <a href="/">
+              <img src="/street.jpg" className="img-one" />
+            </a>
           </div>
         </div>
         <div className="landscapes">
           <h1>Landscapes</h1>
           <div className="img-container-two">
-            <img src="../../public/landscapes.jpg" className="img-two" />
+            <a href="/">
+              <img src="/landscapes.jpg" className="img-two" />
+            </a>
           </div>
         </div>
         <div className="misc">
           <h1>Misc</h1>
           <div className="img-container-three">
-            <img src="../../public/misc.jpg" className="img-three" />
+            <a href="/">
+              <img src="/misc.jpg" className="img-three" />
+            </a>
           </div>
         </div>
       </div>
