@@ -6,8 +6,7 @@ import {
 } from 'react-router-dom';
 
 /* Layouts */
-import MainLayout from "./layouts/MainLayout";
-import ArtworkLayout from './layouts/ArtworkLayout';
+import MainLayout from "./layout/MainLayout";
 
 /* Pages */
 import LandingPage from "./pages/LandingPage";
@@ -27,9 +26,6 @@ const router = createBrowserRouter(
 
       <Route path="the-garden" element={<MainLayout />} >
         <Route index element={<Home />} />
-      </Route>
-
-      <Route path="artwork" element={<ArtworkLayout />} >
         <Route path="drawings" element={<Drawings />} />
         <Route path="photographs" element={<Photographs />} />
         <Route path="prints" element={<Prints />} />
