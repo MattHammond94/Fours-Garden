@@ -1,7 +1,8 @@
+import ArtworkNavBar from "../components/ArtworkNavBar";
 
 const Store = () => {
   return (
-    <div>Store</div>
+    <ArtworkNavBar variant="store" />
   )
 }
 
