@@ -535,3 +535,40 @@
   opacity: 0.6;
   filter: blur(1px);
 }
+
+
+
+
+
+
+
+
+
+
+/* Store page */
+
+.store-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-content-container img {
+  margin-top: 200px;
+  height: 370px;
+  width: 350px;
+
+}
+
+.store-content-container h2 {
+  margin-top: 30px;
+  font-family: var(--text-font);
+  color: var(--main-font-color);
+  align-items: center;
+}
+
+.store-content-container :nth-child(3) {
+  margin-top: 0px;
+}
+
