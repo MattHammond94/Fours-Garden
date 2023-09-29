@@ -201,7 +201,7 @@
   transition: right 4s;
 }
 
-.navbar-child a:nth-child(7) {
+.navbar-child a:nth-child(6) {
   margin-top: 50px;
 }
 
@@ -451,7 +451,7 @@
 .artwork-nav-container {
   height: 170px;
   width: 100%;
-  background-image: url('../public/navbar3.jpg');
+  /* background-image: url('../public/navbar3.jpg'); */
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -486,6 +486,7 @@
 /* photographs page content */
 .photographs-content-container {
   display: flex;
+  /* Add a media query to ensure on large screens it stretches out.*/
 }
 
 .street, .misc, .landscapes {
