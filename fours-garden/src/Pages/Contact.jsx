@@ -1,17 +1,10 @@
 import ContactForm from "../components/ContactForm";
-import { useNavigate } from 'react-router-dom';
 
 /* Toast element */
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-
-  const navigate = useNavigate();
-
-  const sendHome = () => {
-    navigate('/the-garden')
-  }
 
   return (
     <div className="contact-page-container">
@@ -22,10 +15,9 @@ const Contact = () => {
       </div>
       <div className="contact-elements-container">
         <h1 className="contact-header">Contact</h1>
-        <p className="contact-text">You can find and get in touch with me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a><br />Alternatively if you have a query or want to get in touch please complete the form below:</p>
+        <p className="contact-text">You can find me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a><br />Alternatively you can get in touch by completing the form below:</p>
         <ToastContainer />
         <ContactForm />
-        <button className="home-btn" onClick={ sendHome }>Return Home</button>
       </div>
     </div>
   )

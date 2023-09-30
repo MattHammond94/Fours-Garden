@@ -6,7 +6,7 @@ const Home = () => {
       <div className="homepage-content">
         <img src="home-page-title.png" />
         <h1>Welcome to <span>Fours</span> Garden of Wonders</h1>
-        <p>An artist based on the south coast on the UK. If youre looking for to collaborate or need some work done please reach out through the contacts page <a href="/contact">here.</a></p>
+        <p> If you have a query or would like to collaborate then please reach out through the contacts page <a href="/contact">here.</a></p>
       </div>
       <Slider />
     </div>

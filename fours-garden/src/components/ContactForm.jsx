@@ -1,12 +1,18 @@
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const initialState = { name: '', email: '', query: '' }
   const [formValues, setFormValues] = useState(initialState);
   const [errorMessages, setErrorMessages] = useState({});
   const contactForm = useRef();
+  const navigate = useNavigate();
+
+  const sendHome = () => {
+    navigate('/the-garden')
+  }
 
   const handleChange = (e) => {
     const { name, value  } = e.target
@@ -93,6 +99,7 @@ const ContactForm = () => {
         <textarea name="query" value={ formValues.query } onChange={ handleChange } />
         <p>{ errorMessages.query }</p>
         <button className="contact-submit-btn" type="submit">Send</button>
+        <button className="home-btn" onClick={ sendHome }>Home</button>
       </form>
     </div>
   )
