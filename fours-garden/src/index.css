@@ -495,17 +495,16 @@
 /* photographs page content */
 .photographs-content-container {
   display: flex;
+  justify-content: center;
   /* Add a media query to ensure on large screens it stretches out.*/
 }
 
 .street, .misc, .landscapes {
   margin-top: 200px;
-  height: 470px;
+  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* flex: 1; */
-  /* background-color: #E3E0DC; */
 }
 
 .street {
@@ -548,10 +547,35 @@
   scale: 120%;
 }
 
+@media screen and (max-width: 620px) {
+  .photographs-content-container {
+    flex-direction: column;
+  }
 
+  .street {
+    height: 600px;
+  }
 
+  .misc {
+    margin-bottom: 20px;
+  }
 
+  .landscapes, .misc {
+    height: 600px;
+    margin-top: 30px;
+  }
 
+  .img-container-one, .img-container-two, .img-container-three {
+    height: 600px;
+    width: 400px;
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  
+}
 
 
 
