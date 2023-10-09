@@ -381,7 +381,6 @@
 .contact-toast {
   background: var(--main-font-color);
   color: white;
-
 }
 
 .contact-toast .Toastify__close-button {
@@ -533,17 +532,20 @@
   height: 470px;
   width: 96%;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .img-container-one img, .img-container-two img, .img-container-three img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: .5s;
 }
 
 .img-container-one img:hover, .img-container-two img:hover, .img-container-three img:hover {
   opacity: 0.6;
   filter: blur(1px);
+  scale: 120%;
 }
 
 
