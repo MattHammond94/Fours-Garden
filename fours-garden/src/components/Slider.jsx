@@ -24,6 +24,12 @@ const Slider = () => {
       <div className="box7">
         <img src="7.JPG" />
       </div>
+      <div className="box8">
+        <img src="8.jpg" />
+      </div>
+      <div className="box9">
+        <img src="9.jpg" />
+      </div>
     </div>
   </section>
   )
