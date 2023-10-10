@@ -572,14 +572,6 @@
 
 }
 
-.modal-container {
-  height: 100vh;
-  width: 100vw;
-  cursor: default;
-  background: linear-gradient(to bottom, rgb(105, 104, 104), rgba(40, 18, 120, 0));
-}
-
-
 /* Store page */
 .store-content-container {
   display: flex;
@@ -606,3 +598,66 @@
   margin-top: 0px;
 }
 
+
+
+/* ImageSlider component */
+
+.slider-container {
+  height: 100%;
+  position: relative;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 20px;
+  font-size: 50px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 20px;
+  font-size: 50px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.squares-container {
+  display: flex;
+  justify-content: center;
+}
+
+.squares {
+  margin: 2px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Modal */
+
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  cursor: default;
+  background: linear-gradient(to bottom, rgb(105, 104, 104), rgba(40, 18, 120, 0));
+}
+
+.slider-comp-container {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+}
