@@ -18,6 +18,7 @@ import Store from "./pages/Store";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+import PhotoSlider from './components/PhotoSlider';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,14 @@ const router = createBrowserRouter(
       <Route path="the-garden" element={<MainLayout />} >
         <Route index element={<Home />} />
         <Route path="drawings" element={<Drawings />} />
-        <Route path="photographs" element={<Photographs />} />
+
+        <Route path="photographs">
+          <Route index element={<Photographs />} />
+          <Route path="street" element={<PhotoSlider />} />
+          <Route path="landscapes" element={<PhotoSlider />} />
+          <Route path="misc" element={<PhotoSlider />} />
+        </Route>
+
         <Route path="prints" element={<Prints />} />
         <Route path="store" element={<Store />} />
       </Route>
