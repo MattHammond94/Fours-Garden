@@ -1,6 +1,6 @@
-import PhotoSlider from "./PhotoSlider";
+import PhotoSlider from "../components/PhotoSlider";
 
-const Modal = ({ variant }) => {
+const SliderPage = ({ variant }) => {
   const streetSlides = [
     { url: '/Street/1.jpg' },
     { url: '/Street/2.jpg' },
@@ -58,7 +58,7 @@ const Modal = ({ variant }) => {
   }
 
   return (
-    <div className="modal-container">
+    <div className="slider-page-container">
       <div className="border-div"></div>
       <div className="slider-comp-container">
         <PhotoSlider slides={selectedSlides()} />
@@ -67,4 +67,4 @@ const Modal = ({ variant }) => {
   )
 }
 
-export default Modal
+export default SliderPage;

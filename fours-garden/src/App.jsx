@@ -17,9 +17,7 @@ import Photographs from "./pages/Photographs";
 import Store from "./pages/Store";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-
-import PhotoSlider from './components/PhotoSlider';
-import Modal from './components/Modal';
+import SliderPage from "./pages/SliderPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,9 +30,9 @@ const router = createBrowserRouter(
 
         <Route path="photographs">
           <Route index element={<Photographs />} />
-          <Route path="street" element={<Modal variant="street" />} />
-          <Route path="landscapes" element={<Modal variant="landscapes"/>} />
-          <Route path="misc" element={<Modal variant="misc" />} />
+          <Route path="street" element={<SliderPage variant="street" />} />
+          <Route path="landscapes" element={<SliderPage variant="landscapes"/>} />
+          <Route path="misc" element={<SliderPage variant="misc" />} />
         </Route>
 
         <Route path="prints" element={<Prints />} />
