@@ -687,6 +687,13 @@
   .sidebar-img-sig { 
     left: 120px;
   }
+
+  .contact-toast {
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    width: 200px;
+  }
 }
 
 @media (max-width: 823px) {
@@ -708,6 +715,13 @@
   
   .sidebar-img-sig { 
     left: 60px;
+  }
+
+  .contact-toast {
+    position: absolute;
+    top: -3px;
+    left: 165px;
+    width: 160px;
   }
 }
 
@@ -785,9 +799,16 @@
   }
 
   .contact-toast {
-    width: 130px;
-    height: 100px
+    transform: scale(0.7);
+    position: absolute;
+    top: 80px;
+    left: 165px;
+    width: 160px;
   }
+}
+
+@media (max-width: 410px) {
+  
 }
 
 /* Toast styling */
