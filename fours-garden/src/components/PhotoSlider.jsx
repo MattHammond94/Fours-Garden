@@ -32,7 +32,11 @@ const PhotoSlider = ({ slides }) => {
       <div className="slide-container" style={imgStyles}></div>
       <div className="squares-container">
         {slides.map((slide, slideIndex) => (
-          <div className="squares" key={slideIndex} onClick={() => goToSelected(slideIndex)}>
+          <div 
+            className={`squares ${currentIndex === slideIndex ? "selected-square" : "" }`} 
+            key={slideIndex}
+            onClick={() => goToSelected(slideIndex)}
+          >
             &#x25A0;
           </div>
         ))}
