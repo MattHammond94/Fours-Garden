@@ -59,7 +59,7 @@ const Modal = ({ variant }) => {
 
   return (
     <div className="modal-container">
-      <a className="close-button" href="/the-garden/photographs">&#215;</a>
+      <div className="border-div"></div>
       <div className="slider-comp-container">
         <PhotoSlider slides={selectedSlides()} />
       </div>
