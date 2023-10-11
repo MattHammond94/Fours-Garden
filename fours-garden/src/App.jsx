@@ -32,9 +32,9 @@ const router = createBrowserRouter(
 
         <Route path="photographs">
           <Route index element={<Photographs />} />
-          <Route path="street" element={<Modal />} />
-          <Route path="landscapes" element={<Modal />} />
-          <Route path="misc" element={<Modal />} />
+          <Route path="street" element={<Modal variant="street" />} />
+          <Route path="landscapes" element={<Modal variant="landscapes"/>} />
+          <Route path="misc" element={<Modal variant="misc" />} />
         </Route>
 
         <Route path="prints" element={<Prints />} />
