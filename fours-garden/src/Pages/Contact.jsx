@@ -14,8 +14,9 @@ const Contact = () => {
         <img src="home-page-title.png" className="sidebar-img-sig" />
       </div>
       <div className="contact-elements-container">
+        <a className="home-anchor" href="/the-garden">Home</a>
         <h1 className="contact-header">Contact</h1>
-        <p className="contact-text">You can find me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a><br />Alternatively you can get in touch by completing the form below:</p>
+        <p className="contact-text">You can find me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a> Or you can get in touch by completing the form below:</p>
         <ToastContainer />
         <ContactForm />
       </div>
