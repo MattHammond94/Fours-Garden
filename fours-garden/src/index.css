@@ -107,6 +107,7 @@
   font-family: var(--text-font);
   color: var(--main-font-color);
   margin-right: 20px;
+  align-self: flex-end;
 }
 
 .homepage-content a {
@@ -161,7 +162,7 @@
   width: 190px;
   position: fixed;
   left: -260px;
-  z-index: 1;
+  z-index: 2;
 
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
   padding: 20px;
@@ -250,6 +251,8 @@
   text-align: center;
 
   user-select: none;
+
+  z-index: 1;
 }
 
 .artwork-nav-container div h1 {
@@ -1026,7 +1029,7 @@
 
 /* Drawings page */ 
 
-.supersniper-container {
+.items-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1040,18 +1043,18 @@
 }
 
 .template-container {
-  width: 340px;
+  width: 320px;
   height: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: white;
-  margin: 10px;
+  margin: 3px;
 }
 
 .item-img-div {
-  width: 100%;
+  width: 90%;
   height: 500px;
   background-position: center;
   background-size: cover;
@@ -1060,6 +1063,7 @@
 
 .template-container h1, p {
   align-self: flex-start;
+  margin-left: 18px;
 }
 
 
@@ -1074,4 +1078,12 @@
   font-size: 18px;
   font-weight: bolder;
   margin-bottom: 5px;
+  font-style: italic;
 } 
+
+@media (max-width: 970px) {
+  .template-container {
+    width: 380px;
+    height: 520px;
+  }
+}

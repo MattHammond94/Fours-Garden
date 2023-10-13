@@ -6,7 +6,7 @@ const Drawings = () => {
   return (
     <div>
       <ArtworkNavBar variant='drawings'/>
-      <div className="supersniper-container">
+      <div className="items-container">
         <ItemTemplate />
       </div>
     </div>
