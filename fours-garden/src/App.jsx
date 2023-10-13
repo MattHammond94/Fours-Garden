@@ -26,6 +26,7 @@ const router = createBrowserRouter(
 
       <Route path="the-garden" element={<MainLayout />} >
         <Route index element={<Home />} />
+        
         <Route path="drawings" element={<Drawings />} />
 
         <Route path="photographs">

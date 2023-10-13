@@ -137,6 +137,7 @@
   z-index: -1;
 
   scroll-snap-type: x proximity;
+  user-select: none;
 }
 
 .slider div {
@@ -167,6 +168,7 @@
   box-shadow: 0px 2px 4px rgba(166, 145, 123, 0.2);
 
   transition: left 0.3s;
+  user-select: none;
 }
 
 .navbar.open {
@@ -246,6 +248,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  user-select: none;
 }
 
 .artwork-nav-container div h1 {
@@ -522,6 +526,7 @@
   height: 100vh;
   width: 500px;
   margin-right: 10px;
+  user-select: none;
 }
 
 .sidebar-img-main {
@@ -559,6 +564,7 @@
   width: 400px;
   margin-right: 20px;
   margin-left: 80px;
+  user-select: none;
 }
 
 /* contact-elements */
@@ -1004,6 +1010,56 @@
   }
 }
 
-@media (max-width: 360px) {
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Drawings page */ 
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 190px;
+  background-color: red;
+}
+
+.template-container {
+  width: 400px;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: blue;
+}
+
+.item-img-div {
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.template-container h1, p {
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.template-container p {
+  margin-bottom: 5px;
 }
