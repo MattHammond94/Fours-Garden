@@ -280,8 +280,8 @@
 }
 
 .street, .misc, .landscapes {
-  margin-top: 200px;
-  height: 500px;
+  margin-top: 185px;
+  height: 550px;
   display: flex;
   align-items: center;
   flex-direction: column;
