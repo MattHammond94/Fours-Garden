@@ -7,7 +7,7 @@ const Drawings = () => {
     <div>
       <ArtworkNavBar variant='drawings'/>
       <div className="items-container">
-        <ItemTemplate />
+        <ItemTemplate variant="drawings"/>
       </div>
     </div>
   )
