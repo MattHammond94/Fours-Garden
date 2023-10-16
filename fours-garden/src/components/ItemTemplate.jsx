@@ -13,6 +13,7 @@ const ItemTemplate = ({ variant }) => {
     { url: '/Drawings/Happiness.jpg', title: 'Happiness Interrupted', description: 'Pencil, relief ink and photoshop', },
     { url: '/Drawings/Boudica.jpg', title: 'Boudica', description: 'Pencil, relief ink and photoshop', },
     { url: '/Drawings/Slipstream.jpg', title: 'Slipstream', description: 'Pencil, relief ink and photoshop', },
+    { url: '/Drawings/Playing.jpg', title: 'Playing With Fire', description: 'Pen and ink on paper', },
     { url: '/Drawings/Deception.jpg', title: 'Deception', description: 'Pen and ink on paper', },
     { url: '/Drawings/QueenBee.jpg', title: 'Queen Bee', description: 'Pen and ink on paper', },
     { url: '/Drawings/JellyFishKiss.jpg', title: 'Jellyfish Kiss', description: 'Pen and ink on paper', },
@@ -30,10 +31,16 @@ const ItemTemplate = ({ variant }) => {
   ]
 
   const printsData = [
-    { url: '/Prints/.jpg', title: '', description: '', },
-    { url: '/Prints/.jpg', title: '', description: '', },
-    { url: '/Prints/.jpg', title: '', description: '', },
-    { url: '/Prints/.jpg', title: '', description: '', }
+    { url: '/Prints/XX.jpg', title: 'XX', description: 'Relief ink and indian ink on card', },
+    { url: '/Prints/Trans.jpg', title: 'Trans', description: 'Gouache and relief ink on card', },
+    { url: '/Prints/XY.jpg', title: 'XY', description: 'Relief ink and indian ink on card', },
+    { url: '/Prints/Lukewarm.jpg', title: 'Lukewarm', description: 'Relief ink on newsprint', },
+    { url: '/Prints/ExitWounds.jpg', title: 'Exit Wounds', description: 'Relief ink on acetate', },
+    { url: '/Prints/BongWater.jpg', title: 'Bong Water', description: 'Relief ink on newsprint', },
+    { url: '/Prints/LoveBites.jpg', title: 'Love Bites', description: 'Gouache, relief ink and indian ink on paper', },
+    { url: '/Prints/SplitScreen.jpg', title: 'Split Screen', description: 'Gouache, relief ink and indian ink on paper', },
+    { url: '/Prints/BioMass.jpg', title: 'Fragile', description: 'Gouache and indian ink on paper', },
+    { url: '/Prints/FourStrikes.png', title: "Four Strikes and You're Out", description: 'Relief ink on card', }
   ]
 
   const otherProjectsData = [

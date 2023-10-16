@@ -1,8 +1,14 @@
 import ArtworkNavBar from "../components/ArtworkNavBar";
+import ItemTemplate from "../components/ItemTemplate";
 
 const Prints = () => {
   return (
-    <ArtworkNavBar variant="prints" />
+    <div>
+      <ArtworkNavBar variant="prints" />
+      <div className="items-container">
+        <ItemTemplate variant="prints"/>
+      </div>
+    </div>
   )
 }
 
