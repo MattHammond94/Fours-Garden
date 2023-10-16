@@ -252,12 +252,12 @@
 .navbar-toggler {
   position: fixed;
   top: 50px;
-  font-size: 24px;
+  font-size: 29px;
   background: transparent;
   border: none;
   cursor: pointer;
 
-  left: 10px;
+  left: 12px;
   color: var(--main-font-color);
 
   transition: left 0.3s;
@@ -267,7 +267,7 @@
   left: 240px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 700px) {
 
   .navbar {
     width: 170px;
@@ -861,7 +861,7 @@
   }
 
   .home-anchor {
-    display: block;
+    display:inline;
     position: absolute;
     top: 57px;
     right: 70px;
@@ -871,7 +871,7 @@
 
   .contact-header {
     font-size: 68px;
-    margin-top: 52px;
+    margin-top: 45px;
   }
 
   .contact-text {
@@ -881,6 +881,15 @@
   .contact-form form {
     margin-top: 2px;
     gap: 1px;
+  }
+
+  .contact-form label {
+    font-size: 18px;
+  }
+
+  .contact-submit-btn {
+    width: 90px;
+    height: 37px;
   }
 
   .contact-toast {
