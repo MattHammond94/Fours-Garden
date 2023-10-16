@@ -4,7 +4,7 @@ const Slider = () => {
     <section className="slide-section">
     <div className="slider">
       <div className="box1">
-        <img src="1-Swatch.jpg" />
+        <img src="1.jpg" />
       </div>
       <div className="box2">
         <img src="2.jpg" />

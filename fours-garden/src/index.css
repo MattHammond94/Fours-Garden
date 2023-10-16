@@ -206,14 +206,14 @@
   font-weight: bolder;
 }
 
-.navbar-child a:nth-child(6) {
-  margin-top: 50px;
+.navbar-child a:nth-child(7) {
+  margin-top: 65px;
 }
 
 .navbar-child a:hover {
   text-decoration: underline;
   text-shadow: #564635;
-  color: #CAC2BA;
+  font-weight: bolder;
 }
 
 .navbar-toggler {

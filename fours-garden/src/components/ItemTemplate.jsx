@@ -44,7 +44,10 @@ const ItemTemplate = ({ variant }) => {
   ]
 
   const otherProjectsData = [
-    { url: '/OtherProjects/.jpg', title: '', description: '', },
+    { url: '/OtherProjects/TheYearOfThePig.png', title: 'The Year of the Pig', description: 'A short novel about a group of nocturnal young adults who struggle navigating their coming of age.', },
+    { url: '/OtherProjects/Rare1.png', title: 'Rarefied', description: 'Two completed vinyl works (RARE1 and RARE2) for the record label Rarefied.', },
+    { url: '/OtherProjects/Stapled.jpg', title: 'Stapled to a Nihilist', description: 'A short film script about a young mans struggle coming to terms with reality in an increasingly toxic environment.', },
+    { url: '/OtherProjects/Cookbook.jpg', title: 'The Nihilists Cookbook', description: 'A collection of recipes for the misunderstood, migsuided and misrepresented.', },
   ]
 
   let data;
@@ -57,7 +60,7 @@ const ItemTemplate = ({ variant }) => {
     data = printsData;
   }
 
-  if (variant === "otherProjects") {
+  if (variant === "other") {
     data = otherProjectsData;
   } 
   

@@ -1,4 +1,3 @@
-
 const ArtworkNavBar = ({ variant }) => {
 
   const variantData = {
@@ -14,9 +13,13 @@ const ArtworkNavBar = ({ variant }) => {
       title: 'Prints',
       img: "url('/navbar2.jpg')",
     },
+    other: {
+      title: 'Other Projects',
+      img: "url('/navbar4.jpg')"
+    },
     store: {
       title: 'Store',
-      img: "url('/navbar4-store.jpg')",
+      img: "url('/navbar5.jpg')",
     },
   };
 

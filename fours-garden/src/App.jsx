@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 import Drawings from "./pages/Drawings";
 import Prints from "./pages/Prints";
 import Photographs from "./pages/Photographs";
+import OtherProjects from "./pages/OtherProjects";
 import Store from "./pages/Store";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
         </Route>
 
         <Route path="prints" element={<Prints />} />
+        <Route path="other" element={<OtherProjects />} />
         <Route path="store" element={<Store />} />
       </Route>
 
