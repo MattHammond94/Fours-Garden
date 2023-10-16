@@ -9,14 +9,11 @@ const NavBar = ({ variant }) => {
     return currentState ? setIsOpen(false) : setIsOpen(true)
   }
 
-  let togglerStyle = {
-    left: isOpen ? '240px' : '5px',
-    color: 'black'
-  }
+  let togglerStyle;
 
   if (variant === "light") {
     togglerStyle = {
-      left: isOpen ? '240px' : '5px',
+      left: isOpen ? '240px' : '12px',
       top: '70px',
       color: 'white'
     }
@@ -24,7 +21,7 @@ const NavBar = ({ variant }) => {
 
   return (
     <div className={`navbar ${isOpen ? 'open' : ''}`}>
-      <button className="navbar-toggler" style={togglerStyle} onClick={ toggleNav }>&#9776;</button>
+      { isOpen ? <button className="navbar-toggler" style={togglerStyle} onClick={ toggleNav }>&#10094;</button> : <button className="navbar-toggler" style={togglerStyle} onClick={ toggleNav }>&#10095;</button> }
       <nav className="navbar-child">
         <img src="/title-icon.png" alt="logo" />
         <NavLink to="/the-garden/drawings">Drawings</NavLink>
