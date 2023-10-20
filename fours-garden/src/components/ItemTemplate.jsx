@@ -1,5 +1,8 @@
+import { useState } from "react";
+import Modal from "./Modal";
 
 const ItemTemplate = ({ variant }) => {
+  const [modalOpenStatus, setModalOpenStatus] = useState(false);
 
   const drawingsData = [
     { url: '/Drawings/Venus.jpg', title: 'Venus Fly Trap', description: 'Pencil, relief ink and photoshop', },
@@ -62,21 +65,20 @@ const ItemTemplate = ({ variant }) => {
 
   if (variant === "other") {
     data = otherProjectsData;
-  } 
-  
-  // const openModal = () => {
-  //   console.log('Modal open')
-  // }
+  }
 
   return (
     <>
       { data.map((image, index) => (
-        <div key={index} className="template-container">
-          <div className="item-img-div" style={{ backgroundImage: `url(${image.url})` }}></div>
+        <div key={index} className="template-container" >
+          <div className="item-img-div" style={{ backgroundImage: `url(${image.url})` }} onClick={ () => setModalOpenStatus(true) }></div>
           <h1>{ image.title }</h1>
           <p>{ image.description }</p>
         </div>
       ))}
+      <Modal status={modalOpenStatus} setStatus={setModalOpenStatus} >
+          This is the modal
+      </Modal>
     </>
   )
 }

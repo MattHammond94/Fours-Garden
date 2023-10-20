@@ -1,0 +1,19 @@
+import ReactDOM from "react-dom";
+
+const Modal = ({status, children, setStatus}) => {
+
+  if (!status) return null
+
+  return ReactDOM.createPortal(
+    <>
+      <div className="modal-container">
+        <button className="modal-close-button" onClick={ () => setStatus(false) }>&#215;</button>
+        <div className="modal-content-container">
+          { children }
+        </div>
+      </div>
+    </>, document.getElementById('modal')
+  )
+}
+
+export default Modal
