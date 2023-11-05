@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const PhotoSlider = ({ slides }) => {
+const ImgGallery = ({ slides }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -45,4 +45,4 @@ const PhotoSlider = ({ slides }) => {
   )
 }
 
-export default PhotoSlider
+export default ImgGallery
