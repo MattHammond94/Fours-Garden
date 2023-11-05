@@ -70,7 +70,7 @@ const ContactForm = () => {
         await emailjs.sendForm(
           import.meta.env.VITE_EMAIL_SERVICE_ID, 
           import.meta.env.VITE_EMAIL_TEMPLATE_ID, 
-          contactForm.current, 
+          contactForm.current,
           import.meta.env.VITE_EMAIL_PUBLIC_KEY
         );
       
