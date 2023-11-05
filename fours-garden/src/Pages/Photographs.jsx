@@ -49,18 +49,8 @@ const Photographs = () => {
     { url: '/Misc/11.jpg' }
   ]
 
-  const streetFunction = () => {
-    setSelectedSlides(streetSlides);
-    setModalOpenStatus(true);
-  }
-
-  const landscapeFunction = () => {
-    setSelectedSlides(landscapesSlides);
-    setModalOpenStatus(true);
-  }
-
-  const miscFunction = () => {
-    setSelectedSlides(miscSlides);
+  const openModalWithSlides = (slides) => {
+    setSelectedSlides(slides);
     setModalOpenStatus(true);
   }
 
@@ -71,19 +61,19 @@ const Photographs = () => {
         <div className="photographs-content-container">
           <div className="street">
             <h1>Street</h1>
-            <div className="img-container-one" onClick={ streetFunction }>
+            <div className="img-container-one" onClick={() => openModalWithSlides(streetSlides)}>
               <img src="/street.jpg" className="img-one" />
             </div>
           </div>
           <div className="landscapes">
             <h1>Landscapes</h1>
-            <div className="img-container-two" onClick={ landscapeFunction }>
+            <div className="img-container-two" onClick={() => openModalWithSlides(landscapesSlides)}>
               <img src="/landscapes.jpg" className="img-two" />
             </div>
           </div>
           <div className="misc">
             <h1>Misc</h1>
-            <div className="img-container-three" onClick={ miscFunction }>
+            <div className="img-container-three" onClick={() => openModalWithSlides(miscSlides)}>
               <img src="/misc.jpg" className="img-three" />
             </div>
           </div>

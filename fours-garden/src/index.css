@@ -611,20 +611,6 @@
   opacity: 1;
 }
 
-.close-button {
-  text-decoration: none;
-  font-size: 28px;
-  
-  position: absolute;
-  top: 1%;
-  right: 14px;
-  color: var(--main-font-color);
-}
-
-.close-button:visited {
-  color: var(--main-font-color);
-}
-
 /* Prints Page */
 /* ===================================================== */
 

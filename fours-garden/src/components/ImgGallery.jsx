@@ -26,7 +26,6 @@ const ImgGallery = ({ slides }) => {
 
   return (
     <div className="slider-container">
-      <a className="close-button" href="/the-garden/photographs">&#215;</a>
       <div className="left-arrow" onClick={goToPrevious}>&#10094;</div>
       <div className="right-arrow" onClick={goToNext}>&#10095;</div>
       <div className="slide-container" style={imgStyles}></div>

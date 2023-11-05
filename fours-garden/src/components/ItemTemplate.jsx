@@ -3,6 +3,7 @@ import Modal from "./Modal";
 
 const ItemTemplate = ({ variant }) => {
   const [modalOpenStatus, setModalOpenStatus] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const drawingsData = [
     { url: '/Drawings/Venus.jpg', title: 'Venus Fly Trap', description: 'Pencil, relief ink and photoshop', },
@@ -71,13 +72,23 @@ const ItemTemplate = ({ variant }) => {
     <>
       { data.map((image, index) => (
         <div key={index} className="template-container" >
-          <div className="item-img-div" style={{ backgroundImage: `url(${image.url})` }} onClick={ () => setModalOpenStatus(true) }></div>
+          <div 
+            className="item-img-div" 
+            style={{ backgroundImage: `url(${image.url})` }} 
+            onClick={ () => {
+              setSelectedItem(image)
+              setModalOpenStatus(true)
+            }}>
+          </div>
           <h1>{ image.title }</h1>
           <p>{ image.description }</p>
         </div>
       ))}
       <Modal status={modalOpenStatus} setStatus={setModalOpenStatus} >
-          This is the modal
+        {selectedItem && <>
+          <h1>{selectedItem.title}</h1>
+          <p>{selectedItem.description}</p>
+        </>}
       </Modal>
     </>
   )
