@@ -18,7 +18,6 @@ import OtherProjects from "./pages/OtherProjects";
 import Store from "./pages/Store";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import SliderPage from "./pages/SliderPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,16 +26,8 @@ const router = createBrowserRouter(
 
       <Route path="the-garden" element={<MainLayout />} >
         <Route index element={<Home />} />
-        
         <Route path="drawings" element={<Drawings />} />
-
-        <Route path="photographs">
-          <Route index element={<Photographs />} />
-          <Route path="street" element={<SliderPage variant="street" />} />
-          <Route path="landscapes" element={<SliderPage variant="landscapes"/>} />
-          <Route path="misc" element={<SliderPage variant="misc" />} />
-        </Route>
-
+        <Route path="photographs" element={<Photographs />} />
         <Route path="prints" element={<Prints />} />
         <Route path="other" element={<OtherProjects />} />
         <Route path="store" element={<Store />} />
