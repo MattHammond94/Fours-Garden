@@ -15,7 +15,7 @@ const ImgGallery = ({ slides }) => {
   }
 
   const goToNext = () => {
-    const isFinalSlide = currentIndex === 10
+    const isFinalSlide = currentIndex === 15
     const newIndex = isFinalSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex);
   }

@@ -18,7 +18,12 @@ const Photographs = () => {
     { url: '/Street/8.jpg' },
     { url: '/Street/9.jpg' },
     { url: '/Street/10.jpg' },
-    { url: '/Street/11.jpg' }
+    { url: '/Street/11.jpg' },
+    { url: '/Street/12.jpg' },
+    { url: '/Street/13.jpg' },
+    { url: '/Street/14.jpg' },
+    { url: '/Street/15.jpg' },
+    { url: '/Street/16.jpg' }
   ]
 
   const landscapesSlides = [
@@ -32,7 +37,8 @@ const Photographs = () => {
     { url: '/Landscapes/8.jpg' },
     { url: '/Landscapes/9.jpg' },
     { url: '/Landscapes/10.jpg' },
-    { url: '/Landscapes/11.jpg' }
+    { url: '/Landscapes/11.jpg' },
+    { url: '/Landscapes/12.jpg' }
   ]
 
   const miscSlides = [
@@ -46,7 +52,12 @@ const Photographs = () => {
     { url: '/Misc/8.jpg' },
     { url: '/Misc/9.jpg' },
     { url: '/Misc/10.jpg' },
-    { url: '/Misc/11.jpg' }
+    { url: '/Misc/11.jpg' },
+    { url: '/Misc/12.jpg' },
+    { url: '/Misc/13.jpg' },
+    { url: '/Misc/14.jpg' },
+    { url: '/Misc/15.jpg' },
+    { url: '/Misc/16.jpg' }
   ]
 
   const openModalWithSlides = (slides) => {

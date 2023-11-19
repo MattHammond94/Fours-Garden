@@ -6,7 +6,7 @@ const Modal = ({status, children, setStatus}) => {
 
   return ReactDOM.createPortal(
     <>
-      <div className="modal-container" onClick={() => { setStatus(false) }}>
+      <div className="modal-container">
         <p className="modal-close-button" onClick={ () => setStatus(false) }>&#215;</p>
         <div className="modal-content-container">
           { children }
