@@ -102,8 +102,13 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-
   user-select: none;
+}
+
+.home-page-title-img {
+  height: 195px;
+  width: 500px;
+  margin-right: 10px;
 }
 
 .homepage-content h1 {
@@ -124,7 +129,6 @@
   margin-right: 20px;
   align-self: flex-end;
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .homepage-content a {
@@ -134,12 +138,6 @@
 
 .homepage-content a:visited {
   color: var(--main-font-color);
-}
-
-.home-page-title-img {
-  height: 200px;
-  width: 500px;
-  margin-right: 10px;
 }
 
 /* Slider component */
@@ -164,7 +162,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   scroll-snap-align: center;
 }
 
@@ -175,6 +172,10 @@
 }
 
 @media (max-width: 655px) {
+
+  .slider {
+    height: 25.3rem;
+  }
 
   .homepage-content {
     display: flex;
@@ -365,14 +366,6 @@
   }
 }
 
-
-
-/* Drawings page */
-/* ===================================================== */
-
-/* STYLES TO GO HERE */
-
-
 /* Photographs page */
 /* ===================================================== */
 
@@ -411,6 +404,7 @@
   position: absolute;
   top: 75px;
   right: 50px;
+  font-size: 18px;
 }
 
 /* photographs page content */
@@ -604,12 +598,130 @@
   }
 }
 
-/* Prints Page */
-/* ===================================================== */
+/* Item Pages (drawings, prints, other projects pages) */
+/* ===================================================== */ 
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  top: 180px;
+  z-index: 0;
+}
+
+.template-container {
+  width: 320px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 3px;
+}
+
+.item-img-div {
+  width: 90%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.item-img-div:hover {
+  opacity: 0.6;
+}
+
+.template-container h1, p {
+  align-self: flex-start;
+  margin-left: 18px;
+}
 
 
-/* STYLES FOR PRINTS PAGE GO HERE */
+.template-container h1 {
+  font-family: var(--headers-font);
+  color: var(--main-font-color);
+}
 
+.template-container p {
+  font-family: var(--text-font);
+  color: var(--main-font-color);
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  font-style: italic;
+} 
+
+.selected-item-wrapper {
+  height: 620px;
+  width: 500px;
+}
+
+.selected-item-img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 970px) {
+  .template-container {
+    width: 380px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 550px) {
+  .selected-item-wrapper {
+    height: 550px;
+    width: 380px;
+  }
+}
+
+/* Modal Component */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 4;
+}
+
+.modal-content-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.modal-close-button {
+  z-index: 6;
+  font-size: 50px;
+  cursor: pointer;
+  position: fixed;
+  top: 1%;
+  right: 2.5%;
+  color: var(--background-colour);
+  border-radius: 20px;
+  border: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .modal-close-button {
+    font-size: 38px;
+    top: 0.3%;
+  }
+}
 
 /* Store page */
 /* ===================================================== */
@@ -648,7 +760,7 @@
 
 /* Container for side img */
 .contact-sidebar-container {
-  height: 100vh;
+  height: 100%;
   width: 500px;
   margin-right: 10px;
   user-select: none;
@@ -656,7 +768,7 @@
 
 .sidebar-img-main {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 500px;
   left: 0px;
   top: 0px;
@@ -699,7 +811,7 @@
 }
 
 .contact-header {
-  font-size: 80px;
+  font-size: 70px;
   font-family: var(--headers-font);
   color: var(--main-font-color);
   pointer-events: none;
@@ -710,9 +822,9 @@
 .contact-text {
   font-family: var(--text-font);
   color: var(--main-font-color);
-  margin-top: 10px;
-  margin-bottom: 8px;
+  margin-top: 5px;
   font-size: 18px;
+  text-align: center;
 }
 
 .contact-text a:visited {
@@ -724,9 +836,8 @@
   height: 40px;
   background-color: var(--main-font-color);
   color: white;
-  border-radius: 6%;
+  border-radius: 7.5px;
   cursor: pointer;
-  margin-top: 4px;
   border: none;
   align-self: center;
   font-family: var(--text-font);
@@ -790,7 +901,7 @@
   background-color: var(--main-font-color);
   color: white;
   align-self: center;
-  border-radius: 6%;
+  border-radius: 7.55px;
   cursor: pointer;
   border: none;
   margin-top: 5px;
@@ -1141,128 +1252,5 @@
   .not-found-container h1 {
     font-size: 110px;
     margin-top: 20px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Drawings page */ 
-
-.items-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  position: relative;
-  top: 180px;
-  z-index: 0;
-}
-
-.template-container {
-  width: 320px;
-  height: 520px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  margin: 3px;
-}
-
-.item-img-div {
-  width: 90%;
-  height: 500px;
-  background-position: center;
-  background-size: cover;
-  margin-top: 10px;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.item-img-div:hover {
-  opacity: 0.6;
-}
-
-.template-container h1, p {
-  align-self: flex-start;
-  margin-left: 18px;
-}
-
-
-.template-container h1 {
-  font-family: var(--headers-font);
-  color: var(--main-font-color);
-}
-
-.template-container p {
-  font-family: var(--text-font);
-  color: var(--main-font-color);
-  font-size: 18px;
-  font-weight: bolder;
-  margin-bottom: 5px;
-  font-style: italic;
-} 
-
-@media (max-width: 970px) {
-  .template-container {
-    width: 380px;
-    height: 520px;
-  }
-}
-
-
-
-
-
-/* Modal */
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .8);
-  z-index: 4;
-}
-
-.modal-content-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-}
-
-.modal-close-button {
-  z-index: 6;
-  font-size: 50px;
-  cursor: pointer;
-  position: fixed;
-  top: 1%;
-  right: 2.5%;
-  color: var(--background-colour);
-  border-radius: 20px;
-  border: none;
-  opacity: 0.9;
-}
-
-@media (max-width: 640px) {
-  .modal-close-button {
-    font-size: 38px;
-    top: 0.3%;
   }
 }

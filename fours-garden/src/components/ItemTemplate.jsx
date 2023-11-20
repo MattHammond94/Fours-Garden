@@ -85,10 +85,10 @@ const ItemTemplate = ({ variant }) => {
         </div>
       ))}
       <Modal status={modalOpenStatus} setStatus={setModalOpenStatus} >
-        {selectedItem && <>
-          <h1>{selectedItem.title}</h1>
-          <p>{selectedItem.description}</p>
-        </>}
+        {selectedItem &&
+        <div className='selected-item-wrapper'>
+          <div className='selected-item-img' style={{ backgroundImage: `url(${selectedItem.url})` }}></div>
+        </div>}
       </Modal>
     </>
   )

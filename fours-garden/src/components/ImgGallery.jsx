@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const ImgGallery = ({ slides }) => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const imgStyles = {
@@ -15,7 +14,7 @@ const ImgGallery = ({ slides }) => {
   }
 
   const goToNext = () => {
-    const isFinalSlide = currentIndex === 15
+    const isFinalSlide = currentIndex === slides.length - 1
     const newIndex = isFinalSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex);
   }

@@ -2,13 +2,9 @@ import { Outlet, useLocation } from 'react-router-dom';
 import NavBar from "../components/NavBar";
 
 const MainLayout = () => {
-
   const location = useLocation();
 
   const nestedInTheGarden = location.pathname.startsWith('/the-garden/');
-
-  console.log(location);
-  console.log(nestedInTheGarden);
 
   return (
     <div>
