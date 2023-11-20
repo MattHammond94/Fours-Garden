@@ -5,7 +5,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-
   return (
     <div className="contact-page-container">
       <div className="contact-sidebar-container">
@@ -16,7 +15,7 @@ const Contact = () => {
       <div className="contact-elements-container">
         <a className="home-anchor" href="/the-garden">Home</a>
         <h1 className="contact-header">Contact</h1>
-        <p className="contact-text">You can find me on instagram <a href="https://www.instagram.com/four_kid/">@four_kid.</a> Or you can get in touch by completing the form below:</p>
+        <p className="contact-text">You can find me on instagram <a target='_blank' rel="noreferrer" href="https://www.instagram.com/four_kid/">@four_kid.</a> Or you can get in touch by completing the form below:</p>
         <ToastContainer />
         <ContactForm />
       </div>
