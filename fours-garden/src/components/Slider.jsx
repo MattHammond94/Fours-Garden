@@ -1,9 +1,8 @@
-
 const Slider = () => {
   return (
     <section className="slide-section">
     <div className="slider">
-      <div className="box1">
+      <div className="blur-layer" style={{ backgroundImage: `url(/sliderImages/1-blur.jpg)` }}>
         <img src="/sliderImages/1.jpg" loading="lazy" alt="A swatch of different brush strokes in ink"/>
       </div>
       <div className="box2">

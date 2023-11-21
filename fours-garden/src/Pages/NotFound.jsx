@@ -3,7 +3,7 @@ const NotFound = () => {
   return (
     <div className="not-found-container">
       <div className="not-found-img-container">
-        <img className="four-logo" src="../../title-icon.png" alt="The artists logo" loading="lazy"/>
+        <img className="four-logo" src="/title-icon.png" alt="The artists logo" loading="lazy"/>
       </div>
       <div className="not-found-content-container">
         <h1>404</h1>

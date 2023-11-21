@@ -151,6 +151,10 @@
   scroll-snap-align: center;
 }
 
+.blur-layer {
+  background-size: cover;
+}
+
 .slider img {
   width: 100%;
   height: 100%;
@@ -350,9 +354,8 @@
   }
 }
 
-/* Photographs page */
+/* Artwork Nav Bar for all pages */
 /* ===================================================== */
-
 /* Artwork nav component */
 .artwork-nav-container {
   height: 170px;
@@ -401,6 +404,8 @@
   }
 }
 
+/* Photographs page */
+/* ===================================================== */
 /* photographs page content */
 .photographs-content-container {
   display: flex;
