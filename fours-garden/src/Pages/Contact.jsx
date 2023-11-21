@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ContactForm from "../components/ContactForm";
 
 /* Toast element */
@@ -5,10 +6,23 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const revealImage = () => {
+    setImageLoaded(true);
+  }
+
   return (
     <div className="contact-page-container">
       <div className="contact-sidebar-container">
-        <img src="con-page-design.jpg" className="sidebar-img-main" loading="lazy" alt="Ink grunge texture"/>
+        <div className='con-blur-layer' style={{ backgroundImage: `url(con-blur.jpg)`, display: imageLoaded ? 'none' : 'block' }} />
+        <img
+          src="con-page-design.jpg" 
+          className="sidebar-img-main" 
+          loading="lazy" 
+          alt="Ink grunge texture"
+          onLoad={revealImage}
+        />
         <div className="white-layer"></div>
         <img src="home-title-resized.png" className="sidebar-img-sig" loading="lazy" alt="Ink grunge texture"/>
       </div>
