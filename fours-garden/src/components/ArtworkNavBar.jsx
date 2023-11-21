@@ -3,23 +3,23 @@ const ArtworkNavBar = ({ variant }) => {
   const variantData = {
     drawings: {
       title: 'Drawings',
-      img: "url('/navbar1.jpg')",
+      img: "url('/navbarBacks/navbar1.jpg')",
     },
     photographs: {
       title: 'Photographs',
-      img: "url('/navbar3.jpg')",
+      img: "url('/navbarBacks/navbar3.jpg')",
     },
     prints: {
       title: 'Prints',
-      img: "url('/navbar2.jpg')",
+      img: "url('/navbarBacks/navbar2.jpg')",
     },
     other: {
       title: 'Other Projects',
-      img: "url('/navbar4.jpg')"
+      img: "url('/navbarBacks/navbar4.jpg')"
     },
     store: {
       title: 'Store',
-      img: "url('/navbar5.jpg')",
+      img: "url('/navbarBacks/navbar5.jpg')",
     },
   };
 

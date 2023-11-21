@@ -1249,7 +1249,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 890px) {
   .four-signature {
     height: 150px;
     width: 300px;
@@ -1273,32 +1273,7 @@
   }
 }
 
-@media (max-width: 690px) {
-  .four-signature {
-    height: 100px;
-    width: 220px;
-  }
-
-  .four-logo {
-    height: 280px;
-    width: 280px;
-    margin-left: 30px;
-  }
-
-  .not-found-content-container {
-    margin-left: 40px;
-  }
-
-  .not-found-container p {
-    font-size: 22px;
-  }
-
-  .not-found-container h1 {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 550px) {
+@media (max-width: 740px) {
   .four-signature {
     height: 100px;
     width: 200px;

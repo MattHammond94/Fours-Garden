@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <div className="contact-page-container">
       <div className="contact-sidebar-container">
-        <img src="con-page-design.jpg" className="sidebar-img-main" />
+        <img src="con-page-design.jpg" className="sidebar-img-main" loading="lazy" alt="Ink grunge texture"/>
         <div className="white-layer"></div>
-        <img src="home-page-title.png" className="sidebar-img-sig" />
+        <img src="home-title-resized.png" className="sidebar-img-sig" loading="lazy" alt="Ink grunge texture"/>
       </div>
       <div className="contact-elements-container">
         <a className="home-anchor" href="/the-garden">Home</a>
