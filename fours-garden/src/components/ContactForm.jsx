@@ -91,13 +91,13 @@ const ContactForm = () => {
       <form ref={contactForm} onSubmit={contactFormSubmission}>
         <label>Name:</label>
         <input type="text" name="name" value={ formValues.name } onChange={ handleChange }/>
-        <p>{ errorMessages.name }</p>
+        <p className='error'>{ errorMessages.name }</p>
         <label>Email Address:</label>
         <input type="text" name="email" value={ formValues.email } onChange={ handleChange }/>
-        <p>{ errorMessages.email }</p>
+        <p className='error'>{ errorMessages.email }</p>
         <label>Query:</label>
         <textarea name="query" value={ formValues.query } onChange={ handleChange } />
-        <p>{ errorMessages.query }</p>
+        <p className='error'>{ errorMessages.query }</p>
         <button className="contact-submit-btn" type="submit">Send</button>
         <button className="home-btn" onClick={ sendHome }>Home</button>
       </form>

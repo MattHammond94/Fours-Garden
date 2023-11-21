@@ -4,7 +4,9 @@ const Home = () => {
   return (
     <div className="homepage-container">
       <div className='homepage-title-wrapper'>
-        <img className="home-page-title-img" src="home-page-title.png" />
+        <div>
+          <img className="home-page-title-img" src="home-page-title.png" />
+        </div>
       </div>
       <Slider />
     </div>
