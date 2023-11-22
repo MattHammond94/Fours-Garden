@@ -3,10 +3,6 @@ import { useState } from "react";
 const ImgGallery = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imgStyles = {
-    backgroundImage: `url(${slides[currentIndex].url})`
-  }
-
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex -1
@@ -27,7 +23,9 @@ const ImgGallery = ({ slides }) => {
     <div className="slider-container">
       <div className="left-arrow" onClick={goToPrevious}>&#10094;</div>
       <div className="right-arrow" onClick={goToNext}>&#10095;</div>
-      <div className="slide-container" style={imgStyles}></div>
+      <div className="gallery-blur-layer" style={{ backgroundImage: `url(${slides[currentIndex].lowResUrl})` }}>
+        <img className="slide-container" src={`${slides[currentIndex].url}`} />
+      </div>
       <div className="squares-container">
         {slides.map((slide, slideIndex) => (
           <div 

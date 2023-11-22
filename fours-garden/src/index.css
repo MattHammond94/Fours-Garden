@@ -574,6 +574,13 @@
   user-select: none;
 }
 
+.gallery-blur-layer {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 .slide-container {
   width: 100%;
   height: 100%;
