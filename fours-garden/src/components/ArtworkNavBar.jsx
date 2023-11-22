@@ -16,18 +16,22 @@ const ArtworkNavBar = ({ variant }) => {
     photographs: {
       title: 'Photographs',
       img: '/navbarBacks/navbar3.jpg',
+      lowResImg: "url('/navbarBacks/navbar3-blur.jpg')"
     },
     prints: {
       title: 'Prints',
-      img: '/navbarBacks/navbar2.jpg',
+      img: '/navbarBacks/navbar3.jpg',
+      lowResImg: "url('/navbarBacks/navbar2-blur.jpg')"
     },
     other: {
-      title: 'Other Projects',
+      title: 'Projects',
       img: '/navbarBacks/navbar4.jpg',
+      lowResImg: "url('/navbarBacks/navbar4-blur.jpg')"
     },
     store: {
       title: 'Store',
       img: '/navbarBacks/navbar5.jpg',
+      lowResImg: "url('/navbarBacks/navbar5-blur.jpg')"
     },
   };
 
@@ -35,11 +39,14 @@ const ArtworkNavBar = ({ variant }) => {
 
   return (
     <div className="artwork-nav-container">
-      <div className='navbar-blur-layer' style={{ backgroundImage: lowResImg, display: 'block' }} />
-      <img src={ img } alt="Ink textured backdrop" loading="lazy" />
-      <div className="nav-content">
-        <h1>{ title }</h1>
-      </div>
+      <div className='navbar-blur-layer' style={{ backgroundImage: lowResImg, display: imageLoaded ? 'none' : 'block' }} />
+      <img 
+        src={ img } 
+        alt="Ink textured backdrop" 
+        loading="lazy" 
+        onLoad={ revealImage }
+      />
+      <h1 className='navbar-title'>{ title }</h1>
       <a href="/the-garden">Home</a>
     </div>
   )

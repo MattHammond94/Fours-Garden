@@ -27,7 +27,7 @@ const NavBar = ({ variant }) => {
         <NavLink to="/the-garden/drawings">Drawings</NavLink>
         <NavLink to="/the-garden/photographs">Photographs</NavLink>
         <NavLink to="/the-garden/prints">Prints</NavLink>
-        <NavLink to="/the-garden/other">Other Projects</NavLink>
+        <NavLink to="/the-garden/projects">Projects</NavLink>
         <NavLink to="/the-garden/store">Store</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

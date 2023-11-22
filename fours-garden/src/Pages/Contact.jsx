@@ -25,9 +25,16 @@ const Contact = () => {
         />
         <div className="white-layer"></div>
         <img src="home-title-resized.png" className="sidebar-img-sig" loading="lazy" alt="Ink grunge texture"/>
+        <img 
+          className="contact-nav-img" 
+          src="con-page-rotated.jpg"
+          alt="Ink grunge texture"
+          onLoad={ revealImage }
+          style={{ display: imageLoaded ? 'block' : 'none' }}
+        />
+        <a className="home-anchor" href="/the-garden">Home</a>
       </div>
       <div className="contact-elements-container">
-        <a className="home-anchor" href="/the-garden">Home</a>
         <h1 className="contact-header">Contact</h1>
         <p className="contact-text">You can find me on instagram <a target='_blank' rel="noreferrer" href="https://www.instagram.com/four_kid/">@four_kid.</a> Or you can get in touch by completing the form below:</p>
         <ToastContainer />

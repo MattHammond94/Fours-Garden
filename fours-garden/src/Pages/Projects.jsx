@@ -1,7 +1,7 @@
 import ArtworkNavBar from '../components/ArtworkNavBar';
 import ItemTemplate from '../components/ItemTemplate';
 
-const OtherProjects = () => {
+const Projects = () => {
   return (
     <div>
       <ArtworkNavBar variant="other" />
@@ -12,4 +12,4 @@ const OtherProjects = () => {
   )
 }
 
-export default OtherProjects
+export default Projects
