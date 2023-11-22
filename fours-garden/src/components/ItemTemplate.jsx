@@ -77,7 +77,6 @@ const ItemTemplate = ({ variant }) => {
               className="item-img" 
               src={`${image.url}`}
               loading="lazy"
-              alt={`${image.title}`}
               onClick={ () => {
                 setSelectedItem(image)
                 setModalOpenStatus(true)

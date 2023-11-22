@@ -289,6 +289,8 @@
   left: 12px;
   color: var(--main-font-color);
   transition: 0.5s;
+
+  mix-blend-mode: difference;
 }
 
 .navbar.open .navbar-toggler {
@@ -668,7 +670,6 @@
 
 /* Item Pages (drawings, prints, other projects pages) */
 /* ===================================================== */ 
-
 .items-container {
   display: flex;
   flex-wrap: wrap;
@@ -689,7 +690,7 @@
   align-items: center;
   flex-direction: column;
   margin: 1px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .item-img-container {
@@ -746,10 +747,9 @@
   background-size: cover;
 }
 
-/* @media (max-width: 970px) {
-  .template-container {
-    width: 380px;
-    height: 520px;
+@media (max-width: 620px) {
+  .template-container:first-child {
+    margin-top: 15px;
   }
 }
 
@@ -760,11 +760,19 @@
   }
 }
 
-*/
-
 @media (max-width: 440px) {
+  .selected-item-wrapper {
+    height: 520px;
+    width: 350px;
+  }
+
   .items-container {
     top: 150px
+  }
+
+  .template-container {
+    width: 310px;
+    height: 550px;
   }
 }
 

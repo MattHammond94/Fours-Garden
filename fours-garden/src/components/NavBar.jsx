@@ -15,7 +15,7 @@ const NavBar = ({ variant }) => {
     togglerStyle = {
       left: isOpen ? '240px' : '12px',
       top: '67px',
-      color: 'white'
+      color: '#D1D1D2',
     }
   }
 
