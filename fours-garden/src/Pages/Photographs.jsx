@@ -51,20 +51,20 @@ const Photographs = () => {
   ]
 
   const miscSlides = [
-    { url: '/Misc/1-resized.jpg', lowResUrl: '/Misc/1-blur.jpg' },
-    { url: '/Misc/2-resized.jpg', lowResUrl: '/Misc/2-blur.jpg' },
-    { url: '/Misc/3-resized.jpg', lowResUrl: '/Misc/3-blur.jpg' },
-    { url: '/Misc/4-resized.jpg', lowResUrl: '/Misc/4-blur.jpg' },
-    { url: '/Misc/5-resized.jpg', lowResUrl: '/Misc/5-blur.jpg' },
-    { url: '/Misc/6-resized.jpg', lowResUrl: '/Misc/6-blur.jpg' },
-    { url: '/Misc/7-resized.jpg', lowResUrl: '/Misc/7-blur.jpg' },
-    { url: '/Misc/8-resized.jpg', lowResUrl: '/Misc/8-blur.jpg' },
-    { url: '/Misc/9-resized.jpg', lowResUrl: '/Misc/9-blur.jpg' },
-    { url: '/Misc/10-resized.jpg', lowResUrl: '/Misc/10-blur.jpg' },
-    { url: '/Misc/11-resized.jpg', lowResUrl: '/Misc/11-blur.jpg' },
-    { url: '/Misc/12-resized.jpg', lowResUrl: '/Misc/12-blur.jpg' },
-    { url: '/Misc/13-resized.jpg', lowResUrl: '/Misc/13-blur.jpg' },
-    { url: '/Misc/14-resized.jpg', lowResUrl: '/Misc/14-blur.jpg' }
+    { url: '/Misc/1.jpg', lowResUrl: '/Misc/1-blur.jpg' },
+    { url: '/Misc/2.jpg', lowResUrl: '/Misc/2-blur.jpg' },
+    { url: '/Misc/3.jpg', lowResUrl: '/Misc/3-blur.jpg' },
+    { url: '/Misc/4.jpg', lowResUrl: '/Misc/4-blur.jpg' },
+    { url: '/Misc/5.jpg', lowResUrl: '/Misc/5-blur.jpg' },
+    { url: '/Misc/6.jpg', lowResUrl: '/Misc/6-blur.jpg' },
+    { url: '/Misc/7.jpg', lowResUrl: '/Misc/7-blur.jpg' },
+    { url: '/Misc/8.jpg', lowResUrl: '/Misc/8-blur.jpg' },
+    { url: '/Misc/9.jpg', lowResUrl: '/Misc/9-blur.jpg' },
+    { url: '/Misc/10.jpg', lowResUrl: '/Misc/10-blur.jpg' },
+    { url: '/Misc/11.jpg', lowResUrl: '/Misc/11-blur.jpg' },
+    { url: '/Misc/12.jpg', lowResUrl: '/Misc/12-blur.jpg' },
+    { url: '/Misc/13.jpg', lowResUrl: '/Misc/13-blur.jpg' },
+    { url: '/Misc/14.jpg', lowResUrl: '/Misc/14-blur.jpg' }
   ]
 
   const openModalWithSlides = (slides) => {
