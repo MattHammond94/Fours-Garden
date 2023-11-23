@@ -20,13 +20,13 @@ const ImgGallery = ({ slides }) => {
   }
 
   return (
-    <div className="slider-container">
-      <div className="left-arrow" onClick={goToPrevious}>&#10094;</div>
-      <div className="right-arrow" onClick={goToNext}>&#10095;</div>
+    <div className="gallery-container">
+      <div className="left-arrow" onClick={goToPrevious} style={{ display: slides.length < 2 ? 'none' : null }}>&#10094;</div>
+      <div className="right-arrow" onClick={goToNext} style={{ display: slides.length < 2 ? 'none' : null }}>&#10095;</div>
       <div className="gallery-blur-layer" style={{ backgroundImage: `url(${slides[currentIndex].lowResUrl})` }}>
         <img className="slide-container" src={`${slides[currentIndex].url}`} />
       </div>
-      <div className="squares-container">
+      <div className="squares-container" style={{ display: slides.length < 2 ? 'none' : null }}>
         {slides.map((slide, slideIndex) => (
           <div 
             className={`squares ${currentIndex === slideIndex ? "selected-square" : "" }`} 

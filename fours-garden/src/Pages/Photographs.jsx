@@ -114,9 +114,9 @@ const Photographs = () => {
         </div>
       </div>
       <Modal status={modalOpenStatus} setStatus={setModalOpenStatus}>
-        <div className="slider-page-container">
+        <div className="gallery-outer-container">
           <div className="border-div"></div>
-          <div className="slider-comp-container">
+          <div className="photog-gallery-container">
             <ImgGallery slides={selectedSlides} />
           </div>
         </div>

@@ -8,7 +8,8 @@ const Projects = () => {
       title: 'The Year of the Pig', 
       description: 'A short novel about a group of nocturnal young adults who struggle navigating their coming of age.', 
       lowResUrl: '/OtherProjects/TheYearOfThePig-blur.png',
-      slides: [{ url: '/OtherProjects/TheYearOfThePig.png', lowResUrl: '/OtherProjects/TheYearOfThePig-blur.png' }] 
+      slides: [{ url: '/OtherProjects/TheYearOfThePig.png', lowResUrl: '/OtherProjects/TheYearOfThePig-blur.png' }],
+      styles: { width: '520px', height: '600px' } 
     },
     { 
       url: '/OtherProjects/Rare1.png', 
@@ -18,7 +19,8 @@ const Projects = () => {
       slides: [ 
         { url: '/OtherProjects/Rare1.png', lowResUrl: '/OtherProjects/Rare1-blur.png' }, 
         { url: '/OtherProjects/RarefiedFinals.jpg', lowResUrl: '/OtherProjects/RarefiedFinals-blur.jpg' }
-      ] 
+      ],
+      styles: { width: '630px', height: '560px' } 
     },
     { 
       url: '/OtherProjects/Stapled.jpg', 
@@ -30,7 +32,8 @@ const Projects = () => {
         { url: '/OtherProjects/StapledTitle.jpg', lowResUrl: '/OtherProjects/StapledTitle-blur.jpg' }, 
         { url: '/OtherProjects/StapledWritten.jpg', lowResUrl: '/OtherProjects/StapledWritten-blur.jpg' }, 
         { url: '/OtherProjects/StapledCircle.jpg', lowResUrl: '/OtherProjects/StapledCircle-blur.jpg' }
-      ] 
+      ],
+      styles: { width: '470px', height: '630px' } 
     },
     { 
       url: '/OtherProjects/Cookbook.jpg', 
@@ -39,9 +42,9 @@ const Projects = () => {
       lowResUrl: '/OtherProjects/Cookbook-blur.jpg',
       slides: [ 
         { url: '/OtherProjects/RecipesForThe.jpg', lowResUrl: '/OtherProjects/RecipesForThe-blur.jpg' },
-        { url: '/OtherProjects/Cookbook.jpg', lowResUrl: '/OtherProjects/Cookbook-blur.jpg' },
         { url: '/OtherProjects/CookbookTexture.jpg', lowResUrl: '/OtherProjects/CookbookTexture-blur.jpg' },
-      ] 
+      ],
+      styles: { width: '640px', height: '500px' }
     },
   ]
 

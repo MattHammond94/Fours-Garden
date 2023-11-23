@@ -12,6 +12,8 @@ const ItemTemplate = ({ variant, itemData }) => {
     gallery = selectedItem && selectedItem.slides ? <ImgGallery slides={selectedItem.slides} /> : null;
   }
 
+  console.log(selectedItem)
+
   return (
     <>
       { itemData.map((image, index) => (
@@ -31,17 +33,14 @@ const ItemTemplate = ({ variant, itemData }) => {
         </div>
       ))}
       <Modal status={modalOpenStatus} setStatus={setModalOpenStatus} >
-        {selectedItem && !gallery ? (
-        <div className='selected-item-wrapper'>
+        { selectedItem && !gallery ? 
+        (<div className='selected-item-wrapper'>
           <div className='selected-item-img' style={{ backgroundImage: `url(${selectedItem.url})` }}></div>
-        </div> ) 
+        </div>) 
         :
-        ( <div className="slider-page-container">
-          <div className="border-div"></div>
-          <div className="slider-comp-container">
-            { gallery }
-          </div>
-        </div> )
+        (<div className="projects-gallery-container" style={ selectedItem ? selectedItem.styles : null }>
+          { gallery }
+        </div>)
         }
       </Modal>
     </>
