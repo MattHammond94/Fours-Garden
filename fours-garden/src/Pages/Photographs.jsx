@@ -72,19 +72,24 @@ const Photographs = () => {
         <div className="photographs-content-container">
           <div className="street">
             <h1>Street</h1>
-            <div className="img-container-one" onClick={() => openModalWithSlides(streetSlides)}>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(streetSlides)} style={{ backgroundImage: `url(/street-blur.jpg)` }}>
               <img src="/street.jpg" className="img-one" alt="A monochrome photograph of a small shack in India at nightime" loading="lazy"/>
             </div>
           </div>
           <div className="landscapes">
             <h1>Landscapes</h1>
-            <div className="img-container-two" onClick={() => openModalWithSlides(landscapesSlides)}>
-              <img src="/landscapes.jpg" className="img-two" alt="A monochrome photograph of a foggy forest" loading="lazy"/>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(landscapesSlides)} style={{ backgroundImage: 'url(/landscapes-blur.jpg)' }}>
+              <img 
+                src="/landscapes.jpg" 
+                className="img-two" 
+                alt="A monochrome photograph of a foggy forest" 
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="misc">
             <h1>Misc</h1>
-            <div className="img-container-three" onClick={() => openModalWithSlides(miscSlides)}>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(miscSlides)} style={{ backgroundImage: 'url(/misc-blur.jpg)' }}>
               <img src="/misc.jpg" className="img-three" alt="A monochrome photograph of a man on a train" loading="lazy"/>
             </div>
           </div>

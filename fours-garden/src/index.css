@@ -483,8 +483,10 @@
   text-decoration: underline;
 }
 
-.img-container-one, .img-container-two, .img-container-three {
+.photo-img-container {
   background-color: #E3E0DC;
+  background-position: center;
+  background-size: cover;
   height: 470px;
   width: 96%;
   margin-bottom: 5px;
@@ -492,14 +494,14 @@
   cursor: pointer;
 }
 
-.img-container-one img, .img-container-two img, .img-container-three img {
+.photo-img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: .5s;
 }
 
-.img-container-one img:hover, .img-container-two img:hover, .img-container-three img:hover {
+.photo-img-container img:hover {
   opacity: 0.6;
   filter: blur(1px);
   scale: 120%;
@@ -527,7 +529,7 @@
     margin-right: 0px;
   }
 
-  .img-container-one, .img-container-two, .img-container-three {
+  .photo-img-container {
     height: 600px;
     width: 400px;
     margin-top: 0;
@@ -536,7 +538,7 @@
 
 @media (max-width: 440px) {
 
-  .img-container-one, .img-container-two, .img-container-three {
+  .photo-img-container {
     height: 500px;
     width: 325px;
   }
@@ -551,7 +553,7 @@
     height: 520px;
   }
 
-  .img-container-one img:hover, .img-container-two img:hover, .img-container-three img:hover {
+  .photo-img-container img:hover {
     opacity: 1;
     filter: none;
     scale: none;
