@@ -5,7 +5,14 @@ const Store = () => {
     <div>
       <ArtworkNavBar variant="store" />
       <div className="store-content-container">
-        <img src="/store-circ.png" alt="A circle of grunge texture" loading="lazy"/>
+        <div className="grey-layer">
+          <img 
+            src="/store-circ.png" 
+            className="store-img"
+            alt="A circle of grunge texture" 
+            loading="lazy"
+          />
+        </div>
         <h2>The store is currently undergoing some maintenance.</h2>
         <h2>Watch this space!</h2>
       </div>

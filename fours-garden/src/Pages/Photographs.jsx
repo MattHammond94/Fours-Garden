@@ -6,6 +6,7 @@ import ImgGallery from "../components/ImgGallery";
 const Photographs = () => {
   const [modalOpenStatus, setModalOpenStatus] = useState(false);
   const [selectedSlides, setSelectedSlides] = useState([]);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const streetSlides = [
     { url: '/Street/1.jpg', lowResUrl: '/Street/1-blur.jpg' },
@@ -65,6 +66,10 @@ const Photographs = () => {
     setModalOpenStatus(true);
   }
 
+  const completeLoadStatus = () => {
+    setImageLoaded(true);
+  }
+
   return (
     <>
       <div className="photographs-page-container">
@@ -72,25 +77,38 @@ const Photographs = () => {
         <div className="photographs-content-container">
           <div className="street">
             <h1>Street</h1>
-            <div className="photo-img-container" onClick={() => openModalWithSlides(streetSlides)} style={{ backgroundImage: `url(/street-blur.jpg)` }}>
-              <img src="/street.jpg" className="img-one" alt="A monochrome photograph of a small shack in India at nightime" loading="lazy"/>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(streetSlides)} style={{ backgroundImage: imageLoaded ? 'none' : `url(/street-blur.jpg)` }}>
+              <img 
+                src="/street.jpg" 
+                className="img-one" 
+                alt="A monochrome photograph of a small shack in India at nightime" 
+                loading="lazy"
+                onLoad={ completeLoadStatus }
+              />
             </div>
           </div>
           <div className="landscapes">
             <h1>Landscapes</h1>
-            <div className="photo-img-container" onClick={() => openModalWithSlides(landscapesSlides)} style={{ backgroundImage: 'url(/landscapes-blur.jpg)' }}>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(landscapesSlides)} style={{ backgroundImage: imageLoaded ? 'none' : 'url(/landscapes-blur.jpg)' }}>
               <img 
                 src="/landscapes.jpg" 
                 className="img-two" 
                 alt="A monochrome photograph of a foggy forest" 
                 loading="lazy"
+                onLoad={ completeLoadStatus  }
               />
             </div>
           </div>
           <div className="misc">
             <h1>Misc</h1>
-            <div className="photo-img-container" onClick={() => openModalWithSlides(miscSlides)} style={{ backgroundImage: 'url(/misc-blur.jpg)' }}>
-              <img src="/misc.jpg" className="img-three" alt="A monochrome photograph of a man on a train" loading="lazy"/>
+            <div className="photo-img-container" onClick={() => openModalWithSlides(miscSlides)} style={{ backgroundImage: imageLoaded ? 'none' : 'url(/misc-blur.jpg)' }}>
+              <img 
+                src="/misc.jpg" 
+                className="img-three" 
+                alt="A monochrome photograph of a man on a train" 
+                loading="lazy"
+                onLoad={ completeLoadStatus  }
+              />
             </div>
           </div>
         </div>
