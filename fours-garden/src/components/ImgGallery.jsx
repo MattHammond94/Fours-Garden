@@ -24,7 +24,11 @@ const ImgGallery = ({ slides }) => {
       <div className="left-arrow" onClick={goToPrevious} style={{ display: slides.length < 2 ? 'none' : null }}>&#10094;</div>
       <div className="right-arrow" onClick={goToNext} style={{ display: slides.length < 2 ? 'none' : null }}>&#10095;</div>
       <div className="gallery-blur-layer" style={{ backgroundImage: `url(${slides[currentIndex].lowResUrl})` }}>
-        <img className="slide-container" src={`${slides[currentIndex].url}`} />
+        <img 
+          className="slide-container" 
+          src={`${slides[currentIndex].url}`}  
+          loading="lazy"
+        />
       </div>
       <div className="squares-container" style={{ display: slides.length < 2 ? 'none' : null }}>
         {slides.map((slide, slideIndex) => (

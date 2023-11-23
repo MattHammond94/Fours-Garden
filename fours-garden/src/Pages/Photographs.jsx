@@ -9,22 +9,22 @@ const Photographs = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const streetSlides = [
-    { url: '/Street/1.jpg', lowResUrl: '/Street/1-blur.jpg' },
-    { url: '/Street/2.jpg', lowResUrl: '/Street/2-blur.jpg' },
-    { url: '/Street/3.jpg', lowResUrl: '/Street/3-blur.jpg' },
-    { url: '/Street/4.jpg', lowResUrl: '/Street/4-blur.jpg' },
-    { url: '/Street/5.jpg', lowResUrl: '/Street/5-blur.jpg' },
-    { url: '/Street/6.jpg', lowResUrl: '/Street/6-blur.jpg' },
-    { url: '/Street/7.jpg', lowResUrl: '/Street/7-blur.jpg' },
-    { url: '/Street/8.jpg', lowResUrl: '/Street/8-blur.jpg' },
-    { url: '/Street/9.jpg', lowResUrl: '/Street/9-blur.jpg' },
-    { url: '/Street/10.jpg', lowResUrl: '/Street/10-blur.jpg' },
-    { url: '/Street/11.jpg', lowResUrl: '/Street/11-blur.jpg' },
-    { url: '/Street/12.jpg', lowResUrl: '/Street/12-blur.jpg' },
-    { url: '/Street/13.jpg', lowResUrl: '/Street/13-blur.jpg' },
-    { url: '/Street/14.jpg', lowResUrl: '/Street/14-blur.jpg' },
-    { url: '/Street/15.jpg', lowResUrl: '/Street/15-blur.jpg' },
-    { url: '/Street/16.jpg', lowResUrl: '/Street/16-blur.jpg' }
+    { url: '/Street/1-resized.jpg', lowResUrl: '/Street/1-blur.jpg' },
+    { url: '/Street/2-resized.jpg', lowResUrl: '/Street/2-blur.jpg' },
+    { url: '/Street/3-resized.jpg', lowResUrl: '/Street/3-blur.jpg' },
+    { url: '/Street/4-resized.jpg', lowResUrl: '/Street/4-blur.jpg' },
+    { url: '/Street/5-resized.jpg', lowResUrl: '/Street/5-blur.jpg' },
+    { url: '/Street/6-resized.jpg', lowResUrl: '/Street/6-blur.jpg' },
+    { url: '/Street/7-resized.jpg', lowResUrl: '/Street/7-blur.jpg' },
+    { url: '/Street/8-resized.jpg', lowResUrl: '/Street/8-blur.jpg' },
+    { url: '/Street/9-resized.jpg', lowResUrl: '/Street/9-blur.jpg' },
+    { url: '/Street/10-resized.jpg', lowResUrl: '/Street/10-blur.jpg' },
+    { url: '/Street/11-resized.jpg', lowResUrl: '/Street/11-blur.jpg' },
+    { url: '/Street/12-resized.jpg', lowResUrl: '/Street/12-blur.jpg' },
+    { url: '/Street/13-resized.jpg', lowResUrl: '/Street/13-blur.jpg' },
+    { url: '/Street/14-resized.jpg', lowResUrl: '/Street/14-blur.jpg' },
+    { url: '/Street/15-resized.jpg', lowResUrl: '/Street/15-blur.jpg' },
+    { url: '/Street/16-resized.jpg', lowResUrl: '/Street/16-blur.jpg' }
   ]
 
   const landscapesSlides = [

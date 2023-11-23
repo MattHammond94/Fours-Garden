@@ -24,7 +24,7 @@ const Contact = () => {
           onLoad={revealImage}
         />
         <div className="white-layer"></div>
-        <img src="home-title-resized.png" className="sidebar-img-sig" loading="lazy" alt="Ink grunge texture"/>
+        <img src="home-title-resized.png" className="sidebar-img-sig" loading="lazy" />
         <img 
           className="contact-nav-img" 
           src="con-page-rotated.jpg"

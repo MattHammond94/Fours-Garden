@@ -12,8 +12,6 @@ const ItemTemplate = ({ variant, itemData }) => {
     gallery = selectedItem && selectedItem.slides ? <ImgGallery slides={selectedItem.slides} /> : null;
   }
 
-  console.log(selectedItem)
-
   return (
     <>
       { itemData.map((image, index) => (
@@ -38,7 +36,7 @@ const ItemTemplate = ({ variant, itemData }) => {
           <div className='selected-item-img' style={{ backgroundImage: `url(${selectedItem.url})` }}></div>
         </div>) 
         :
-        (<div className="projects-gallery-container" style={ selectedItem ? selectedItem.styles : null }>
+        (<div className="projects-gallery-container">
           { gallery }
         </div>)
         }

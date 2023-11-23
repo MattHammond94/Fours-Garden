@@ -62,7 +62,7 @@
   width: 390px;
   /* margin-top: 30px; */
 
-  animation: fade 4s ease-out forwards;
+  animation: fade 3s ease-out forwards;
   cursor: pointer;
   user-select: none;
 }
@@ -594,7 +594,8 @@
 }
 
 .projects-gallery-container {
-  
+  width: 500px; 
+  height: 600px;
 }
 
 /* ImgGallery component */
@@ -665,6 +666,11 @@
     margin: 0 auto;
   }
 
+  .projects-gallery-container {
+    width: 420px; 
+    height: 520px;
+  }
+
   .left-arrow, .right-arrow {
     position: absolute;
     top: 50%;
@@ -693,6 +699,11 @@
     height: 580px;
     margin: 0 auto;
   }
+
+  .projects-gallery-container {
+    width: 390px; 
+    height: 490px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -700,6 +711,11 @@
     width: 335px;
     height: 520px;
     margin: 0 auto;
+  }
+
+  .projects-gallery-container {
+    width: 330px; 
+    height: 430px;
   }
 }
 
@@ -879,7 +895,7 @@
 .store-img {
   height: 370px;
   width: 350px;
-  animation: fade 4s ease-out forwards;
+  animation: fade 3s ease-out forwards;
 }
 
 .store-content-container h2 {

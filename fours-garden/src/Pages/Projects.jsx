@@ -18,7 +18,8 @@ const Projects = () => {
       lowResUrl: '/OtherProjects/Rare1-blur.png',
       slides: [ 
         { url: '/OtherProjects/Rare1.png', lowResUrl: '/OtherProjects/Rare1-blur.png' }, 
-        { url: '/OtherProjects/RarefiedFinals.jpg', lowResUrl: '/OtherProjects/RarefiedFinals-blur.jpg' }
+        { url: '/OtherProjects/RarefiedFinalOne.jpg', lowResUrl: '/OtherProjects/RarefiedFinalOne-blur.jpg' },
+        // { url: '/OtherProjects/RarefiedFinalTwo.jpg', lowResUrl: '/OtherProjects/RarefiedFinalTwo-blur.jpg' }
       ],
       styles: { width: '630px', height: '560px' } 
     },
@@ -30,8 +31,7 @@ const Projects = () => {
       slides: [ 
         { url: '/OtherProjects/StapledAlt.jpg', lowResUrl: '/OtherProjects/StapledAlt-blur.jpg' }, 
         { url: '/OtherProjects/StapledTitle.jpg', lowResUrl: '/OtherProjects/StapledTitle-blur.jpg' }, 
-        { url: '/OtherProjects/StapledWritten.jpg', lowResUrl: '/OtherProjects/StapledWritten-blur.jpg' }, 
-        { url: '/OtherProjects/StapledCircle.jpg', lowResUrl: '/OtherProjects/StapledCircle-blur.jpg' }
+        { url: '/OtherProjects/StapledWritten.jpg', lowResUrl: '/OtherProjects/StapledWritten-blur.jpg' }
       ],
       styles: { width: '470px', height: '630px' } 
     },
@@ -42,6 +42,7 @@ const Projects = () => {
       lowResUrl: '/OtherProjects/Cookbook-blur.jpg',
       slides: [ 
         { url: '/OtherProjects/RecipesForThe.jpg', lowResUrl: '/OtherProjects/RecipesForThe-blur.jpg' },
+        { url: '/OtherProjects/Cookbook.jpg', lowResUrl: '/OtherProjects/Cookbook-blur.jpg' },
         { url: '/OtherProjects/CookbookTexture.jpg', lowResUrl: '/OtherProjects/CookbookTexture-blur.jpg' },
       ],
       styles: { width: '640px', height: '500px' }
