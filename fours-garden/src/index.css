@@ -997,7 +997,10 @@
 
 .contact-nav-img {
   display: none;
+  height: 0px;
+  width: 0px;
   opacity: 0;
+  user-select: none;
 }
 
 /* Container for title, para, form component and return home btn */
