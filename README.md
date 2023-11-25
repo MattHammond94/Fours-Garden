@@ -2,6 +2,8 @@
 
 ___A portfolio style website for an artist to showcase their work and provide information___
 
+___Site has now been deployed using netilfy and can be accessed viewed here: https://fours-garden.netlify.app/___
+
 ## Build 
 Website was scaffolded using vite and built using react, jsx and vanilla CSS.
 
